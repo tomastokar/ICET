@@ -1,0 +1,406 @@
+# --------------------
+# XOR blobs synthetic
+# --------------------
+'xor_blobs':
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['c']
+  'num_vars' : ['x', 'y']
+  'cat_levels' : 2
+
+# ------------------------
+# Purely tabular datasets
+# ------------------------
+'compas' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['sex', 'race_African-American', 'race_Caucasian', 'c_charge_degree_F', 'c_charge_degree_M', 'twoyearrecid', 'age_cat_25-45', 'age_cat_Greaterthan45', 'age_cat_Lessthan25']
+  'num_vars' : ['age', 'juv_misd_count', 'priors_count']
+  'response' : 'twoyearrecid'
+  'cat_levels' : 2
+
+'electricity' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['day', 'class']  
+  'num_vars' : ['date', 'period', 'nswprice', 'nswdemand', 'vicprice', 'vicdemand', 'transfer']
+  'response' : 'class'
+  'cat_levels' : [7, 2]
+
+'eye_movements' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['P1stFixation', 'P2stFixation', 'nextWordRegress', 'label']  
+  'num_vars' : ['lineNo', 'assgNo', 'prevFixDur', 'firstfixDur', 'firstPassFixDur', 'nextFixDur', 'firstSaccLen', 'lastSaccLen', 'prevFixPos', 'landingPos', 'leavingPos', 'totalFixDur', 'meanFixDur', 'regressLen', 'regressDur', 'pupilDiamMax', 'pupilDiamLag', 'timePrtctg', 'titleNo', 'wordNo']
+  'response' : 'label'
+  'cat_levels' : 2
+
+'covertype' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['Y']
+  'num_vars' : ['X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7', 'X8', 'X9', 'X10']
+  'response' : 'Y'
+  'cat_levels' : 2
+
+'telescope' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['class']  
+  'num_vars' : ['fLength:', 'fWidth:', 'fSize:', 'fConc:', 'fConc1:', 'fAsym:', 'fM3Long:', 'fM3Trans:', 'fAlpha:', 'fDist:']
+  'response' : 'class'
+  'cat_levels' : 2
+
+'diabetes' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['readmitted']  
+  'num_vars' : ['time_in_hospital', 'num_lab_procedures', 'num_medications', 'number_outpatient', 'number_emergency', 'number_inpatient', 'number_diagnoses']
+  'response' : 'readmitted'
+  'cat_levels' : 2
+
+'credit' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['SeriousDlqin2yrs']  
+  'num_vars' : ['RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'MonthlyIncome', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'NumberOfDependents']
+  'response' : 'SeriousDlqin2yrs'
+  'cat_levels' : 2
+
+'california' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['price_above_median']  
+  'num_vars' : ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']
+  'response' : 'price_above_median'
+  'cat_levels' : 2
+
+'heloc' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['RiskPerformance']  
+  'num_vars' : ['ExternalRiskEstimate', 'MSinceOldestTradeOpen', 'MSinceMostRecentTradeOpen', 'AverageMInFile', 'NumSatisfactoryTrades', 'NumTrades60Ever2DerogPubRec', 'NumTrades90Ever2DerogPubRec', 'PercentTradesNeverDelq', 'MSinceMostRecentDelq', 'MaxDelq2PublicRecLast12M', 'NumTotalTrades', 'NumTradesOpeninLast12M', 'PercentInstallTrades', 'MSinceMostRecentInqexcl7days', 'NumInqLast6M', 'NumInqLast6Mexcl7days', 'NetFractionRevolvingBurden', 'NetFractionInstallBurden', 'NumRevolvingTradesWBalance', 'NumInstallTradesWBalance', 'NumBank2NatlTradesWHighUtilization', 'PercentTradesWBalance']
+  'response' : 'RiskPerformance'
+  'cat_levels' : 2
+
+'diamonds' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['cut', 'color']  
+  'num_vars' : ['carat', 'clarity', 'depth', 'table', 'x', 'y', 'z', 'price']
+  'response' : 'price'
+  'cat_levels' : [5, 7]
+
+'house_sales' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['waterfront']  
+  'num_vars' : ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'grade', 'sqft_above', 'sqft_basement', 'yr_built', 'lat', 'long', 'sqft_living15', 'price']
+  'response' : 'price'
+  'cat_levels' : 2
+
+'bike_sharing' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['month', 'hour']  
+  'num_vars' : ['temp', 'feel_temp', 'humidity', 'windspeed', 'count']
+  'response' : 'count'
+  'cat_levels' : [12, 24]
+
+'road_safety' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['Vehicle_Reference_df_res', 'Vehicle_Type', 'Vehicle_Manoeuvre', 'Vehicle_Location-Restricted_Lane', 'Hit_Object_in_Carriageway', 'Hit_Object_off_Carriageway', 'Was_Vehicle_Left_Hand_Drive?', 'Propulsion_Code', 'Local_Authority_(District)', 'Urban_or_Rural_Area', 'Vehicle_Reference_df', 'Casualty_Reference', 'Sex_of_Casualty', 'Pedestrian_Location', 'Pedestrian_Movement', 'Casualty_Type', 'SexofDriver']  
+  'num_vars' : ['Age_of_Driver', 'Age_Band_of_Driver', 'Engine_Capacity_(CC)', 'Age_of_Vehicle', 'Longitude', 'Latitude', 'Police_Force', 'Number_of_Vehicles', 'Age_of_Casualty', 'Age_Band_of_Casualty', 'Casualty_IMD_Decile']
+  'response' : 'SexofDriver'
+  'cat_levels' : [32, 15, 18, 10, 12, 12, 2, 8, 324, 2, 23, 35, 2, 11, 10, 21, 2]
+
+'brazilian_houses' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['city', 'area', 'animal', 'furniture']  
+  'num_vars' : ['rooms', 'bathroom', 'parking_spaces', 'hoa_(BRL)', 'rent_amount_(BRL)', 'property_tax_(BRL)', 'fire_insurance_(BRL)', 'total_(BRL)']
+  'response' : 'total_(BRL)'
+  'cat_levels' : [5, 517, 2, 2]
+
+'abalone' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['Sex']  
+  'num_vars' : ['Length', 'Diameter', 'Height', 'Whole_weight', 'Shucked_weight', 'Viscera_weight', 'Shell_weight', 'Classnumberofrings']
+  'response' : 'Classnumberofrings'
+  'cat_levels' : 3
+
+'supreme' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['Liberal', 'Unconstitutional', 'Precedent_alteration', 'Unanimous', 'Lower_court_disagreement']
+  'num_vars' : ['Actions_taken', 'Year_of_decision', 'Log_exposure']
+  'response' : 'Log_exposure'
+  'cat_levels' : 2
+
+'seattle_crime' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['Precinct', 'Sector', 'Occurred_hour', 'Occurred_min']
+  'num_vars' : ['ReportedTime']
+  'response' : 'ReportedTime'
+  'cat_levels' : [5, 17, 24, 24]
+
+'superconduct' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['mean_atomic_mass', 'wtd_mean_atomic_mass', 'gmean_atomic_mass', 'wtd_gmean_atomic_mass', 'entropy_atomic_mass', 'wtd_entropy_atomic_mass', 'range_atomic_mass', 'wtd_range_atomic_mass', 'std_atomic_mass', 'wtd_std_atomic_mass', 'mean_fie', 'wtd_mean_fie', 'gmean_fie', 'wtd_gmean_fie', 'entropy_fie', 'wtd_entropy_fie', 'range_fie', 'wtd_range_fie', 'std_fie', 'wtd_std_fie', 'mean_atomic_radius', 'wtd_mean_atomic_radius', 'gmean_atomic_radius', 'wtd_gmean_atomic_radius', 'entropy_atomic_radius', 'wtd_entropy_atomic_radius', 'range_atomic_radius', 'wtd_range_atomic_radius', 'std_atomic_radius', 'wtd_std_atomic_radius', 'mean_Density', 'wtd_mean_Density', 'gmean_Density', 'wtd_gmean_Density', 'entropy_Density', 'wtd_entropy_Density', 'range_Density', 'wtd_range_Density', 'std_Density', 'wtd_std_Density', 'mean_ElectronAffinity', 'wtd_mean_ElectronAffinity', 'gmean_ElectronAffinity', 'wtd_gmean_ElectronAffinity', 'entropy_ElectronAffinity', 'wtd_entropy_ElectronAffinity', 'range_ElectronAffinity', 'wtd_range_ElectronAffinity', 'std_ElectronAffinity', 'wtd_std_ElectronAffinity', 'mean_FusionHeat', 'wtd_mean_FusionHeat', 'gmean_FusionHeat', 'wtd_gmean_FusionHeat', 'entropy_FusionHeat', 'wtd_entropy_FusionHeat', 'range_FusionHeat', 'wtd_range_FusionHeat', 'std_FusionHeat', 'wtd_std_FusionHeat', 'mean_ThermalConductivity', 'wtd_mean_ThermalConductivity', 'gmean_ThermalConductivity', 'wtd_gmean_ThermalConductivity', 'entropy_ThermalConductivity', 'wtd_entropy_ThermalConductivity', 'range_ThermalConductivity', 'wtd_range_ThermalConductivity', 'std_ThermalConductivity', 'wtd_std_ThermalConductivity', 'mean_Valence', 'wtd_mean_Valence', 'gmean_Valence', 'wtd_gmean_Valence', 'entropy_Valence', 'wtd_entropy_Valence', 'wtd_range_Valence', 'std_Valence', 'wtd_std_Valence', 'criticaltemp']
+  'response' : 'criticaltemp'
+  'cat_levels' : []
+
+'wine_quality' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+  'response' : 'quality'
+  'cat_levels' : []
+
+'medical_charges' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['Total_Discharges', 'Average_Covered_Charges', 'Average_Medicare_Payments', 'AverageTotalPayments']
+  'response' : 'AverageTotalPayments'
+  'cat_levels' : []
+
+'jannis' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['class']
+  'num_vars' : ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'V29', 'V30', 'V31', 'V32', 'V33', 'V34', 'V35', 'V36', 'V37', 'V38', 'V39', 'V40', 'V41', 'V42', 'V43', 'V44', 'V45', 'V46', 'V47', 'V48', 'V49', 'V50', 'V51', 'V52', 'V53', 'V54']
+  'response' : 'class'
+  'cat_levels' : 2
+
+'defaults' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['x2', 'y']
+  'num_vars' : ['x1', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15', 'x16', 'x17', 'x18', 'x19', 'x20', 'x21', 'x22', 'x23']
+  'response' : 'y'
+  'cat_levels' : 2
+
+'bioresponse' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['target']
+  'num_vars' : ['D1', 'D2', 'D3', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D25', 'D26', 'D30', 'D31', 'D32', 'D33', 'D34', 'D35', 'D36', 'D37', 'D38', 'D39', 'D40', 'D41', 'D42', 'D43', 'D44', 'D45', 'D46', 'D47', 'D48', 'D49', 'D50', 'D52', 'D53', 'D54', 'D55', 'D56', 'D57', 'D58', 'D59', 'D60', 'D61', 'D62', 'D63', 'D64', 'D65', 'D66', 'D67', 'D68', 'D69', 'D70', 'D71', 'D73', 'D74', 'D75', 'D76', 'D78', 'D80', 'D83', 'D84', 'D85', 'D86', 'D87', 'D88', 'D89', 'D90', 'D91', 'D92', 'D93', 'D95', 'D96', 'D97', 'D99', 'D100', 'D101', 'D102', 'D103', 'D104', 'D105', 'D106', 'D107', 'D117', 'D118', 'D119', 'D120', 'D121', 'D122', 'D123', 'D124', 'D125', 'D126', 'D128', 'D129', 'D130', 'D131', 'D132', 'D133', 'D135', 'D137', 'D138', 'D139', 'D140', 'D141', 'D142', 'D143', 'D144', 'D145', 'D146', 'D147', 'D149', 'D150', 'D151', 'D152', 'D153', 'D154', 'D155', 'D157', 'D158', 'D159', 'D160', 'D161', 'D162', 'D167', 'D168', 'D171', 'D172', 'D173', 'D174', 'D175', 'D176', 'D177', 'D178', 'D179', 'D180', 'D181', 'D182', 'D183', 'D184', 'D185', 'D186', 'D187', 'D188', 'D189', 'D190', 'D191', 'D192', 'D193', 'D194', 'D195', 'D196', 'D197', 'D198', 'D199', 'D200', 'D201', 'D202', 'D203', 'D204', 'D205', 'D206', 'D207', 'D208', 'D209', 'D210', 'D211', 'D212', 'D213', 'D214', 'D215', 'D216', 'D217', 'D218', 'D219', 'D220', 'D221', 'D222', 'D223', 'D224', 'D232', 'D233', 'D235', 'D236', 'D237', 'D239', 'D241', 'D243', 'D244', 'D245', 'D246', 'D247', 'D248', 'D249', 'D250', 'D261', 'D311', 'D312', 'D314', 'D315', 'D335', 'D337', 'D338', 'D339', 'D340', 'D350', 'D351', 'D374', 'D375', 'D399', 'D415', 'D416', 'D417', 'D418', 'D419', 'D420', 'D421', 'D422', 'D423', 'D424', 'D441', 'D442', 'D443', 'D444', 'D445', 'D446', 'D447', 'D448', 'D449', 'D451', 'D452', 'D453', 'D454', 'D455', 'D456', 'D457', 'D458', 'D459', 'D460', 'D461', 'D464', 'D469', 'D470', 'D471', 'D472', 'D473', 'D474', 'D475', 'D476', 'D477', 'D478', 'D479', 'D486', 'D494', 'D496', 'D504', 'D505', 'D512', 'D513', 'D514', 'D515', 'D516', 'D517', 'D518', 'D519', 'D520', 'D521', 'D522', 'D526', 'D527', 'D528', 'D531', 'D533', 'D545', 'D546', 'D547', 'D548', 'D549', 'D550', 'D551', 'D553', 'D554', 'D555', 'D556', 'D557', 'D558', 'D559', 'D560', 'D561', 'D562', 'D563', 'D564', 'D565', 'D566', 'D567', 'D582', 'D583', 'D585', 'D586', 'D587', 'D588', 'D589', 'D590', 'D591', 'D592', 'D593', 'D607', 'D608', 'D621', 'D622', 'D625', 'D649', 'D659', 'D660', 'D661', 'D662', 'D663', 'D664', 'D665', 'D666', 'D667', 'D668', 'D672', 'D697', 'D698', 'D700', 'D701', 'D702', 'D703', 'D704', 'D705', 'D739', 'D740', 'D741', 'D742', 'D743', 'D748', 'D749', 'D751', 'D752', 'D753', 'D754', 'D755', 'D756', 'D763', 'D764', 'D765', 'D766', 'D767', 'D768', 'D769', 'D770', 'D771', 'D772', 'D773', 'D774', 'D780', 'D802', 'D803', 'D806', 'D809', 'D810', 'D811', 'D812', 'D813', 'D814', 'D815', 'D816', 'D817', 'D819', 'D842', 'D843', 'D848', 'D856', 'D863', 'D864', 'D865', 'D867', 'D873', 'D881', 'D882', 'D883', 'D889', 'D890', 'D891', 'D892', 'D893', 'D894', 'D895', 'D896', 'D897', 'D899', 'D911', 'D912', 'D913', 'D925', 'D926', 'D927', 'D928', 'D929', 'D933', 'D935', 'D937', 'D938', 'D946', 'D947', 'D948', 'D950', 'D951']
+  'response' : 'target'
+  'cat_levels' : 2
+
+'allstate' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7', 'cat8', 'cat9', 'cat10', 'cat11', 'cat12', 'cat13', 'cat14', 'cat15', 'cat16', 'cat17', 'cat18', 'cat19', 'cat20', 'cat21', 'cat22', 'cat23', 'cat24', 'cat25', 'cat26', 'cat27', 'cat28', 'cat29', 'cat30', 'cat31', 'cat32', 'cat33', 'cat34', 'cat35', 'cat36', 'cat37', 'cat38', 'cat39', 'cat40', 'cat41', 'cat42', 'cat43', 'cat44', 'cat45', 'cat46', 'cat47', 'cat48', 'cat49', 'cat50', 'cat51', 'cat52', 'cat53', 'cat54', 'cat55', 'cat56', 'cat57', 'cat58', 'cat59', 'cat60', 'cat61', 'cat62', 'cat63', 'cat64', 'cat65', 'cat66', 'cat67', 'cat68', 'cat69', 'cat70', 'cat71', 'cat72', 'cat73', 'cat74', 'cat75', 'cat76', 'cat77', 'cat78', 'cat79', 'cat80', 'cat81', 'cat82', 'cat83', 'cat84', 'cat85', 'cat86', 'cat87', 'cat88', 'cat89', 'cat90', 'cat91', 'cat92', 'cat93', 'cat94', 'cat95', 'cat96', 'cat97', 'cat98', 'cat99', 'cat100', 'cat101', 'cat102', 'cat103', 'cat104', 'cat105', 'cat106', 'cat107', 'cat108', 'cat111', 'cat114']
+  'num_vars' : ['cont1', 'cont2', 'cont3', 'cont4', 'cont5', 'cont6', 'cont7', 'cont8', 'cont9', 'cont10', 'cont11', 'cont12', 'cont13', 'cont14', 'loss']
+  'response' : 'loss'
+  'cat_levels' : [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 7, 8, 7, 5, 7, 5, 8, 7, 5, 16, 15, 19, 9, 13, 17, 20, 17, 20, 11, 16, 19]
+
+'mercedes' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['X3', 'X4', 'X6', 'X10', 'X12', 'X13', 'X14', 'X15', 'X16', 'X17', 'X18', 'X19', 'X20', 'X21', 'X22', 'X23', 'X24', 'X26', 'X27', 'X28', 'X29', 'X30', 'X31', 'X32', 'X33', 'X34', 'X35', 'X36', 'X37', 'X38', 'X39', 'X40', 'X41', 'X42', 'X43', 'X44', 'X45', 'X46', 'X47', 'X48', 'X49', 'X50', 'X51', 'X52', 'X53', 'X54', 'X55', 'X56', 'X57', 'X58', 'X59', 'X60', 'X61', 'X62', 'X63', 'X64', 'X65', 'X66', 'X67', 'X68', 'X69', 'X70', 'X71', 'X73', 'X74', 'X75', 'X76', 'X77', 'X78', 'X79', 'X80', 'X81', 'X82', 'X83', 'X84', 'X85', 'X86', 'X87', 'X88', 'X89', 'X90', 'X91', 'X92', 'X94', 'X95', 'X96', 'X97', 'X98', 'X99', 'X100', 'X101', 'X102', 'X103', 'X104', 'X105', 'X106', 'X108', 'X109', 'X110', 'X111', 'X112', 'X113', 'X114', 'X115', 'X116', 'X117', 'X118', 'X119', 'X120', 'X122', 'X123', 'X124', 'X125', 'X126', 'X127', 'X128', 'X129', 'X130', 'X131', 'X132', 'X133', 'X134', 'X135', 'X136', 'X137', 'X138', 'X139', 'X140', 'X141', 'X142', 'X143', 'X144', 'X145', 'X146', 'X147', 'X148', 'X150', 'X151', 'X152', 'X153', 'X154', 'X155', 'X156', 'X157', 'X158', 'X159', 'X160', 'X161', 'X162', 'X163', 'X164', 'X165', 'X166', 'X167', 'X168', 'X169', 'X170', 'X171', 'X172', 'X173', 'X174', 'X175', 'X176', 'X177', 'X178', 'X179', 'X180', 'X181', 'X182', 'X183', 'X184', 'X185', 'X186', 'X187', 'X189', 'X190', 'X191', 'X192', 'X194', 'X195', 'X196', 'X197', 'X198', 'X199', 'X200', 'X201', 'X202', 'X203', 'X204', 'X205', 'X206', 'X207', 'X208', 'X209', 'X210', 'X211', 'X212', 'X213', 'X214', 'X215', 'X216', 'X217', 'X218', 'X219', 'X220', 'X221', 'X222', 'X223', 'X224', 'X225', 'X226', 'X227', 'X228', 'X229', 'X230', 'X231', 'X232', 'X234', 'X236', 'X237', 'X238', 'X239', 'X240', 'X241', 'X242', 'X243', 'X244', 'X245', 'X246', 'X247', 'X248', 'X249', 'X250', 'X251', 'X252', 'X253', 'X254', 'X255', 'X256', 'X257', 'X258', 'X259', 'X260', 'X261', 'X262', 'X263', 'X264', 'X265', 'X266', 'X267', 'X269', 'X270', 'X271', 'X272', 'X273', 'X274', 'X275', 'X276', 'X277', 'X278', 'X279', 'X280', 'X281', 'X282', 'X283', 'X284', 'X285', 'X286', 'X287', 'X288', 'X291', 'X292', 'X294', 'X295', 'X296', 'X298', 'X299', 'X300', 'X301', 'X302', 'X304', 'X305', 'X306', 'X307', 'X308', 'X309', 'X310', 'X311', 'X312', 'X313', 'X314', 'X315', 'X316', 'X317', 'X318', 'X319', 'X320', 'X321', 'X322', 'X323', 'X324', 'X325', 'X326', 'X327', 'X328', 'X329', 'X331', 'X332', 'X333', 'X334', 'X335', 'X336', 'X337', 'X338', 'X339', 'X340', 'X341', 'X342', 'X343', 'X344', 'X345', 'X346', 'X348', 'X349', 'X350', 'X351', 'X352', 'X353', 'X354', 'X355', 'X356', 'X357', 'X358', 'X359', 'X360', 'X361', 'X362', 'X363', 'X364', 'X365', 'X366', 'X367', 'X368', 'X369', 'X370', 'X371', 'X372', 'X373', 'X374', 'X375', 'X376', 'X377', 'X378', 'X379', 'X380', 'X382', 'X383', 'X384', 'X385']
+  'num_vars' : ['y']
+  'response' : 'y'
+  'cat_levels' : [7, 4, 12, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+
+'sgemm' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['KWG', 'KWI', 'STRM', 'STRN', 'SA', 'SB']
+  'num_vars' : ['Run2', 'Run3', 'Run4', 'Run1']
+  'response' : 'Run1'
+  'cat_levels' : 2
+
+'topo' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['oz265', 'oz260', 'oz256']
+  'num_vars' : ['oz1', 'oz2', 'oz3', 'oz4', 'oz5', 'oz6', 'oz7', 'oz8', 'oz9', 'oz10', 'oz11', 'oz12', 'oz13', 'oz14', 'oz15', 'oz16', 'oz17', 'oz18', 'oz19', 'oz20', 'oz21', 'oz22', 'oz23', 'oz24', 'oz25', 'oz26', 'oz27', 'oz28', 'oz29', 'oz30', 'oz31', 'oz32', 'oz33', 'oz34', 'oz35', 'oz36', 'oz37', 'oz38', 'oz39', 'oz40', 'oz41', 'oz42', 'oz43', 'oz44', 'oz45', 'oz46', 'oz47', 'oz48', 'oz49', 'oz50', 'oz51', 'oz52', 'oz53', 'oz54', 'oz55', 'oz56', 'oz57', 'oz58', 'oz59', 'oz60', 'oz61', 'oz62', 'oz63', 'oz64', 'oz65', 'oz66', 'oz67', 'oz68', 'oz69', 'oz70', 'oz71', 'oz72', 'oz73', 'oz74', 'oz75', 'oz76', 'oz77', 'oz78', 'oz79', 'oz80', 'oz81', 'oz82', 'oz83', 'oz84', 'oz85', 'oz86', 'oz87', 'oz88', 'oz89', 'oz90', 'oz91', 'oz92', 'oz93', 'oz94', 'oz95', 'oz96', 'oz97', 'oz98', 'oz99', 'oz100', 'oz101', 'oz102', 'oz103', 'oz104', 'oz105', 'oz106', 'oz107', 'oz108', 'oz109', 'oz110', 'oz111', 'oz112', 'oz113', 'oz114', 'oz115', 'oz116', 'oz117', 'oz118', 'oz119', 'oz120', 'oz121', 'oz122', 'oz123', 'oz124', 'oz125', 'oz126', 'oz127', 'oz128', 'oz129', 'oz130', 'oz131', 'oz132', 'oz133', 'oz134', 'oz135', 'oz136', 'oz137', 'oz138', 'oz139', 'oz140', 'oz141', 'oz142', 'oz143', 'oz144', 'oz145', 'oz146', 'oz147', 'oz148', 'oz149', 'oz150', 'oz151', 'oz152', 'oz153', 'oz154', 'oz155', 'oz156', 'oz157', 'oz158', 'oz159', 'oz160', 'oz161', 'oz162', 'oz163', 'oz164', 'oz170', 'oz171', 'oz172', 'oz173', 'oz174', 'oz175', 'oz176', 'oz177', 'oz178', 'oz179', 'oz180', 'oz181', 'oz182', 'oz183', 'oz184', 'oz185', 'oz186', 'oz187', 'oz188', 'oz189', 'oz190', 'oz191', 'oz192', 'oz193', 'oz194', 'oz195', 'oz196', 'oz197', 'oz198', 'oz199', 'oz200', 'oz201', 'oz202', 'oz203', 'oz204', 'oz205', 'oz206', 'oz207', 'oz208', 'oz209', 'oz210', 'oz211', 'oz212', 'oz213', 'oz214', 'oz215', 'oz216', 'oz217', 'oz218', 'oz219', 'oz220', 'oz221', 'oz222', 'oz223', 'oz224', 'oz225', 'oz226', 'oz227', 'oz228', 'oz229', 'oz230', 'oz231', 'oz232', 'oz233', 'oz234', 'oz235', 'oz236', 'oz237', 'oz238', 'oz239', 'oz240', 'oz241', 'oz242', 'oz243', 'oz244', 'oz245', 'oz246', 'oz248', 'oz249', 'oz250', 'oz252', 'oz254', 'oz257', 'oz258', 'oz259', 'oz261', 'oz262', 'oz264', 'oz267']
+  'response' : 'oz267'
+  'cat_levels' : 2
+
+'ailerons' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['climbRate', 'Sgz', 'p', 'q', 'curPitch', 'curRoll', 'absRoll', 'diffClb', 'diffRollRate', 'diffDiffClb', 'SeTime1', 'SeTime2', 'SeTime3', 'SeTime4', 'SeTime5', 'SeTime6', 'SeTime7', 'SeTime8', 'SeTime9', 'SeTime10', 'SeTime11', 'SeTime12', 'SeTime13', 'SeTime14', 'diffSeTime1', 'diffSeTime3', 'diffSeTime5', 'diffSeTime7', 'diffSeTime9', 'diffSeTime11', 'diffSeTime13', 'alpha', 'Se', 'goal']
+  'response' : 'goal'
+  'cat_levels' : []
+
+'miami_housing' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['LATITUDE', 'LONGITUDE', 'LND_SQFOOT', 'TOT_LVG_AREA', 'SPEC_FEAT_VAL', 'RAIL_DIST', 'OCEAN_DIST', 'WATER_DIST', 'CNTR_DIST', 'SUBCNTR_DI', 'HWY_DIST', 'age', 'month_sold', 'SALEPRC']
+  'response' : 'SALEPRC'
+  'cat_levels' : []
+
+'cpu' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['lread', 'lwrite', 'scall', 'sread', 'swrite', 'fork', 'exec', 'rchar', 'wchar', 'pgout', 'ppgout', 'pgfree', 'pgscan', 'atch', 'pgin', 'ppgin', 'pflt', 'vflt', 'runqsz', 'freemem', 'freeswap', 'usr']
+  'response' : 'usr'
+  'cat_levels' : []
+
+'elevators' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['climbRate', 'Sgz', 'p', 'q', 'curRoll', 'absRoll', 'diffClb', 'diffRollRate', 'diffDiffClb', 'SaTime1', 'SaTime2', 'SaTime3', 'SaTime4', 'diffSaTime1', 'diffSaTime3', 'Sa', 'Goal']
+  'response' : 'Goal'
+  'cat_levels' : []
+
+'house' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['P1', 'P5p1', 'P6p2', 'P11p4', 'P14p9', 'P15p1', 'P15p3', 'P16p2', 'P18p2', 'P27p4', 'H2p2', 'H8p2', 'H10p1', 'H13p1', 'H18pA', 'H40p4', 'price']
+  'response' : 'price'
+  'cat_levels' : []
+
+'houses' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['median_income', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'latitude', 'longitude', 'medianhousevalue']
+  'response' : 'medianhousevalue'
+  'cat_levels' : []
+
+'pol' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['f5', 'f6', 'f7', 'f8', 'f9', 'f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19', 'f20', 'f21', 'f22', 'f23', 'f24', 'f25', 'f26', 'f27', 'f28', 'f29', 'f30', 'f31', 'f32', 'f33', 'foo']
+  'response' : 'foo'
+  'cat_levels' : []
+
+'sulfur' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['a1', 'a2', 'a3', 'a4', 'a5', 'y2', 'y1']
+  'response' : 'y1'
+  'cat_levels' : []
+
+'miniboone' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['signal']
+  'num_vars' : ['ParticleID_0', 'ParticleID_1', 'ParticleID_2', 'ParticleID_3', 'ParticleID_4', 'ParticleID_5', 'ParticleID_6', 'ParticleID_7', 'ParticleID_8', 'ParticleID_9', 'ParticleID_10', 'ParticleID_11', 'ParticleID_12', 'ParticleID_13', 'ParticleID_14', 'ParticleID_15', 'ParticleID_16', 'ParticleID_17', 'ParticleID_18', 'ParticleID_19', 'ParticleID_20', 'ParticleID_21', 'ParticleID_22', 'ParticleID_23', 'ParticleID_24', 'ParticleID_25', 'ParticleID_26', 'ParticleID_27', 'ParticleID_28', 'ParticleID_29', 'ParticleID_30', 'ParticleID_31', 'ParticleID_32', 'ParticleID_33', 'ParticleID_34', 'ParticleID_35', 'ParticleID_36', 'ParticleID_37', 'ParticleID_38', 'ParticleID_39', 'ParticleID_40', 'ParticleID_41', 'ParticleID_42', 'ParticleID_43', 'ParticleID_44', 'ParticleID_45', 'ParticleID_46', 'ParticleID_47', 'ParticleID_48', 'ParticleID_49']
+  'response' : 'signal'
+  'cat_levels' : 2
+
+'bank_marketing' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['Class']
+  'num_vars' : ['V1', 'V6', 'V10', 'V12', 'V13', 'V14', 'V15']
+  'response' : 'Class'
+  'cat_levels' : 2
+
+'yprop' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : []
+  'num_vars' : ['oz1', 'oz2', 'oz3', 'oz4', 'oz5', 'oz6', 'oz9', 'oz10', 'oz11', 'oz12', 'oz13', 'oz31', 'oz83', 'oz87', 'oz124', 'oz125', 'oz126', 'oz127', 'oz128', 'oz131', 'oz133', 'oz149', 'oz150', 'oz151', 'oz165', 'oz171', 'oz172', 'oz173', 'oz175', 'oz176', 'oz177', 'oz178', 'oz181', 'oz183', 'oz185', 'oz197', 'oz246', 'oz247', 'oz248', 'oz249', 'oz250', 'oz251', 'oz252']
+  'response' : 'oz252'
+  'cat_levels' : []
+
+'ukair' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['Hour', 'Month', 'DayofWeek', 'Environment_Type']
+  'num_vars' : ['Altitude_m', 'PM_sub_2_5_sub_particulate_matter_Hourly_measured', 'PM_sub_10_sub_particulate_matter_Hourly_measured']
+  'response' : 'PM_sub_10_sub_particulate_matter_Hourly_measured'
+  'cat_levels' : [24, 12, 7, 4]
+
+'albert' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V13', 'V19', 'V22', 'V30', 'V33', 'V35', 'V36', 'V40', 'V41', 'V42', 'V43', 'V45', 'V47', 'V50', 'V51', 'V52', 'V59', 'V63', 'V72', 'V75', 'class']
+  'num_vars' : []  
+  'response' : 'class'
+  'cat_levels' : [150, 2083, 575, 85, 6589, 1326, 715, 52, 1673, 9, 104, 145, 10, 3, 8, 4, 10, 13, 580, 4, 79, 1526, 9, 11, 593, 95, 8, 605, 14, 90, 91, 2]
+
+'airlines' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['Month', 'DayofMonth']
+  'num_vars' : ['CRSDepTime', 'CRSArrTime', 'Distance', 'DepDelay']
+  'response' : 'DepDelay'
+  'cat_levels' : [12, 31]
+
+'higgs' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['target']
+  'num_vars' : ['lepton_pT', 'lepton_eta', 'lepton_phi', 'missing_energy_magnitude', 'missing_energy_phi', 'jet_1_pt', 'jet_1_eta', 'jet_1_phi', 'jet_2_pt', 'jet_2_eta', 'jet_2_phi', 'jet_3_pt', 'jet_3_eta', 'jet_3_phi', 'jet_4_pt', 'jet_4_eta', 'jet_4_phi', 'm_jj', 'm_jjj', 'm_lv', 'm_jlv', 'm_bb', 'm_wbb', 'm_wwbb']
+  'response' : 'target'
+  'cat_levels' : 2  
+
+'nyc_taxi' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['VendorID', 'store_and_fwd_flag', 'RatecodeID', 'extra', 'mta_tax', 'improvement_surcharge', 'trip_type', 'lpep_pickup_datetime_day', 'lpep_pickup_datetime_hour', 'lpep_pickup_datetime_minute', 'lpep_dropoff_datetime_day', 'lpep_dropoff_datetime_hour', 'lpep_dropoff_datetime_minute']
+  'num_vars' : ['passenger_count', 'tolls_amount', 'total_amount', 'tip_amount']
+  'response' : 'tip_amount'
+  'cat_levels' : [2, 2, 5, 5, 3, 3, 2, 31, 24, 60, 31, 24, 60]
+
+'soil' :
+  'img_vars' : []
+  'txt_vars' : []
+  'cat_vars' : ['isns']
+  'num_vars' : ['northing', 'easting', 'resistivity', 'track']
+  'cat_levels' : 2
+  'response' : 'track'
+
+# ----------------------
+# Text-tabular datasets
+# ----------------------
+'kickstarter' :
+  'img_vars' : []
+  'txt_vars' : ['name', 'desc', 'keywords']
+  'cat_vars' : ['disable_communication', 'country', 'currency', 'final_status']
+  'num_vars' : ['goal', 'deadline', 'created_at']
+  'response' : 'final_status'
+  'cat_levels' : [2, 10, 9, 2]
+
+'clothing' :
+  'img_vars' : []
+  'txt_vars' : ['Title', 'Review Text']
+  'cat_vars' : ['Recommended IND', 'Division Name', 'Department Name', 'Class Name', 'Rating']
+  'num_vars' : ['Age', 'Positive Feedback Count']
+  'response' : 'Rating'
+  'cat_levels' : [2, 4, 7, 21, 5]
+
+# -----------------------
+# Image-tabular datasets
+# -----------------------
+
+'streetview' :  
+  'img_vars' : ['image'] 
+  'txt_vars' : []   
+  'cat_vars' : ['country_iso_alpha2']  
+  'num_vars' : ['latitude', 'longitude']
+  'response' : 'country_iso_alpha2'
+  'cat_levels' : 56
+  'resolution' : 64
+
+'skin_cancer' :
+  'img_vars' : ['image']
+  'txt_vars' : []
+  'cat_vars' : ['dx', 'dx_type', 'sex', 'localization']
+  'num_vars' : ['age']
+  'response' : 'dx'
+  'cat_levels' : [7, 4, 3, 15] 
+  'resolution' : 128
+
